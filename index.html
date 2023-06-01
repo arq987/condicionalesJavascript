@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Condicionales Javascript</title>
+</head>
+
+<body>
+    <Header>
+        <h1>Ejercicios condicionales</h1>
+    </Header>
+    <main>
+        <ul>
+            <li>Ejercicio 1</li>
+            <div class="ejercicio1">
+                <label for="belleza">¿Eres bellisimo/a?</label>
+                <select name="belleza" id="belleza">
+                <option value="1">Si</option>
+                <option value="2">No</option>
+            </select>
+                <button type="submit" onclick="validarBelleza()">Consultar</button>
+            </div>
+            <li>Ejercicio 2</li>
+            <div class="ejercicio2">
+                <label for="numero">Digite un número divisible en dos(2)</label>
+                <input id="numero" type="number">
+                <button type="submit" onclick="validarDivision()">Consultar</button>
+            </div>
+            <li>Ejercicio 3</li>
+            <div class="ejercicio3">
+                <label>Número par o impar</label>
+                <button type="submit" onclick="validarNumero()">Consultar</button>
+            </div>
+            <li>Ejercicio 4</li>
+            <div class="ejercicio4">
+                <label for="premio">Digite un número para ganar un premio</label>
+                <input id="premio" type="number">
+                <button type="submit" onclick="validarPremio()">Consultar</button>
+            </div>
+            <li>Ejercicio 5</li>
+            <div class="ejercicio5">
+                <label for="numero1">Digite el primer número</label>
+                <input id="numero1" type="number">
+                <label for="numero2">Digite el segundo número</label>
+                <input id="numero2" type="number">
+                <button type="submit" onclick="validarNumeroMenor()">Consultar</button>
+            </div>
+            <li>Ejercicio 6</li>
+            <div class="ejercicio6">
+                <label for="numero_1">Digite el primer número</label>
+                <input id="numero_1" type="number">
+                <label for="numero_2">Digite el segundo número</label>
+                <input id="numero_2" type="number">
+                <label for="numero_3">Digite el tercer número</label>
+                <input id="numero_3" type="number">
+                <button type="submit" onclick="validarNumeroMayor()">Consultar</button>
+            </div>
+        </ul>
+    </main>
+</body>
+<script src="/js/condicionales.js"></script>
+</html>

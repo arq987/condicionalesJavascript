@@ -1,0 +1,23 @@
+.ejercicio1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+label {
+    margin: 10px;
+}
+select {
+    width: 50px;
+    margin-right: 10px;
+}
+button {
+    background-color: green;
+    color: azure;
+    margin-top: 10px;
+}
+li {
+    margin-top: 20px;
+}
+input {
+    margin-top: 10px;
+}
