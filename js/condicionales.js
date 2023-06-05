@@ -85,25 +85,25 @@ function validarDiaSemana() {
 }
 function validarCalificacion() {
     let valorCalificacion = parseInt(document.getElementById("valorCalificacion").value);
-  
+
     if (valorCalificacion >= 1 && valorCalificacion <= 10) {
-      if (valorCalificacion < 6) {
-        alert("La calificación es: Reprobado");
-      } else if (valorCalificacion >= 6 && valorCalificacion <= 8) {
-        alert("La calificación es: Regular");
-      } else if (valorCalificacion === 9) {
-        alert("La calificación es: Bien");
-      } else {
-        alert("La calificación es: Excelente");
-      }
+        if (valorCalificacion < 6) {
+            alert("La calificación es: Reprobado");
+        } else if (valorCalificacion >= 6 && valorCalificacion <= 8) {
+            alert("La calificación es: Regular");
+        } else if (valorCalificacion === 9) {
+            alert("La calificación es: Bien");
+        } else {
+            alert("La calificación es: Excelente");
+        }
     } else {
-      alert("Error: la calificación debe estar entre los números 1 y 10.");
+        alert("Error: la calificación debe estar entre los números 1 y 10.");
     }
-  }
-  function calcularHelado() {
+}
+function calcularHelado() {
     let topping = document.getElementById("topping").value;
-    let precioHelado = 50; 
-  
+    let precioHelado = 50;
+
     if (topping.toLowerCase() === "oreo") {
         toppingOreo = precioHelado + 10;
         alert("El precio del helado con topping de Oreo es: " + toppingOreo + " MXN")
@@ -114,10 +114,10 @@ function validarCalificacion() {
         toppingBrownie = precioHelado + 20;
         alert("El precio del helado con topping de Brownie es: " + toppingBrownie + " MXN")
     } else {
-      alert("No tenemos este topping, lo sentimos. El precio de su helado sin topping es: " + precioHelado + " MXN");
+        alert("No tenemos este topping, lo sentimos. El precio de su helado sin topping es: " + precioHelado + " MXN");
     }
-  }
-  function validarCosto () {
+}
+function validarCosto() {
 
     let programa = document.getElementById("programa").value;
     let beca = document.getElementById("beca").value;
@@ -131,52 +131,77 @@ function validarCalificacion() {
     let becaGoogle = 0.15;
     let becaJesua = 0.5
 
-    if (programa == 1 && beca == 1){
+    if (programa == 1 && beca == 1) {
         courseCostoDescuentoMensual = (costoCourse - (costoCourse * becaFacebook)) / duracionCourse;
         courseCostoTotalMensual = costoCourse / duracionCourse;
         alert("El Course al mes con descuento por beca Facebook es: " + courseCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo del Course al mes sin descuento es: " + courseCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Course es: " + costoCourse + " MXN");
-    } else if (programa == 1 && beca == 2){
+    } else if (programa == 1 && beca == 2) {
         courseCostoDescuentoMensual = (costoCourse - (costoCourse * becaGoogle)) / duracionCourse;
         courseCostoTotalMensual = costoCourse / duracionCourse;
         alert("El Course al mes con descuento por beca Google es: " + courseCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo del Course al mes sin descuento es: " + courseCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Course es: " + costoCourse + " MXN");
-    } else if (programa == 1 && beca == 3){
+    } else if (programa == 1 && beca == 3) {
         courseCostoDescuentoMensual = (costoCourse - (costoCourse * becaJesua)) / duracionCourse;
         courseCostoTotalMensual = costoCourse / duracionCourse;
         alert("El Course al mes con descuento por beca Jesua es: " + courseCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo del Course al mes sin descuento es: " + courseCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Course es: " + costoCourse + " MXN");
-    } else if (programa == 2 && beca == 1){
+    } else if (programa == 2 && beca == 1) {
         carreraCostoDescuentoMensual = (costoCarrera - (costoCarrera * becaFacebook)) / duracionCarrera;
         carreraCostoTotalMensual = costoCarrera / duracionCarrera;
         alert("La Carrera al mes con descuento por beca Facebook es: " + carreraCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo de la Carrera al mes sin descuento es: " + carreraCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total de la Carrera es: " + costoCarrera + " MXN");
-    } else if (programa == 2 && beca == 2){
+    } else if (programa == 2 && beca == 2) {
         carreraCostoDescuentoMensual = (costoCarrera - (costoCarrera * becaGoogle)) / duracionCarrera;
         carreraCostoTotalMensual = costoCarrera / duracionCarrera;
         alert("La Carrera al mes con descuento por beca Google es: " + carreraCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo de la Carrera al mes sin descuento es: " + carreraCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total de la Carrera es: " + costoCarrera + " MXN");
-    } else if (programa == 2 && beca == 3){
+    } else if (programa == 2 && beca == 3) {
         carreraCostoDescuentoMensual = (costoCarrera - (costoCarrera * becaJesua)) / duracionCarrera;
         carreraCostoTotalMensual = costoCarrera / duracionCarrera;
         alert("La Carrera al mes con descuento por beca Jesua es: " + carreraCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo de la Carrera al mes sin descuento es: " + carreraCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total de la Carrera es: " + costoCarrera + " MXN");
-    }else if (programa == 3 && beca == 1){
+    } else if (programa == 3 && beca == 1) {
         masterCostoDescuentoMensual = (costoMaster - (costoMaster * becaFacebook)) / duracionMaster;
         masterCostoTotalMensual = costoMaster / duracionMaster;
         alert("El Master al mes con descuento por beca Facebook es: " + masterCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo del Master al mes sin descuento es: " + masterCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Master es: " + costoMaster + " MXN");
-    } else if (programa == 3 && beca == 2){
+    } else if (programa == 3 && beca == 2) {
         masterCostoDescuentoMensual = (costoMaster - (costoMaster * becaGoogle)) / duracionMaster;
         masterCostoTotalMensual = costoMaster / duracionMaster;
         alert("El Master al mes con descuento por beca Google es: " + masterCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo del Master al mes sin descuento es: " + masterCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Master es: " + costoMaster + " MXN");
-    } else if (programa == 3 && beca == 3){
+    } else if (programa == 3 && beca == 3) {
         masterCostoDescuentoMensual = (costoMaster - (costoMaster * becaJesua)) / duracionMaster;
         masterCostoTotalMensual = costoMaster / duracionMaster;
         alert("El Master al mes con descuento por beca Jesua es: " + masterCostoDescuentoMensual.toFixed(2) + " MXN" + "\nEl costo del Master al mes sin descuento es: " + masterCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Master es: " + costoMaster + " MXN");
-    } else if (beca==4){
-        if (programa == 1){
+    } else if (beca == 4) {
+        if (programa == 1) {
             courseCostoTotalMensual = costoCourse / duracionCourse;
             alert("El costo del Course al mes es: " + courseCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Course es: " + costoCourse + " MXN");
-        }else if (programa == 2){
+        } else if (programa == 2) {
             carreraCostoTotalMensual = costoCarrera / duracionCarrera;
             alert("El costo de la Carrera al mes es: " + carreraCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total de la Carrera es: " + costoCarrera + " MXN");
-        }else{
+        } else {
             masterCostoTotalMensual = costoMaster / duracionMaster;
             alert("El costo del Master al mes es: " + masterCostoTotalMensual.toFixed(2) + " MXN" + "\nEl costo total del Master es: " + costoMaster + " MXN");
         }
     }
-  }
+}
+function validarCostoDistanciaCombustible() {
+    let tipoVehiculo = document.getElementById("vehiculo").value;
+    let distancia = document.getElementById("distancia").value;
+    let combustible = document.getElementById("combustible").value;
+    let costoKm;
+    let costoCombustible;
+
+    if (tipoVehiculo == 1) {
+       costoKm = 0.20;
+    } else if (tipoVehiculo == 2) {
+        costoKm = 0.10;
+    } else {
+        costoKm = 0.50;
+    }
+    let costoTotalKm = costoKm * distancia;
+
+    if (combustible <= 100) {
+        costoCombustible = 5;
+    } else {
+        costoCombustible = 10
+    }
+
+    let total = costoTotalKm + costoCombustible;
+    alert ("El costo total a pagar de acuerdo a la distancia recorrida y litros de combustible consumidos es de: $" + total.toFixed(2))
+}
