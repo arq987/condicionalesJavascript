@@ -21,3 +21,6 @@ li {
 input {
     margin-top: 10px;
 }
+#programa, #beca {
+    width: 150px;
+}

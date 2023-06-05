@@ -19,9 +19,9 @@
             <div class="ejercicio1">
                 <label for="belleza">¿Eres bellisimo/a?</label>
                 <select name="belleza" id="belleza">
-                <option value="1">Si</option>
-                <option value="2">No</option>
-            </select>
+                    <option value="1">Si</option>
+                    <option value="2">No</option>
+                </select>
                 <button type="submit" onclick="validarBelleza()">Consultar</button>
             </div>
             <li>Ejercicio 2</li>
@@ -59,8 +59,44 @@
                 <input id="numero_3" type="number">
                 <button type="submit" onclick="validarNumeroMayor()">Consultar</button>
             </div>
+            <li>Ejercicio 7</li>
+            <div class="ejercicio7">
+                <label for="diaSemana">Digite el día de la semana</label>
+                <input id="diaSemana" type="text">
+                <button type="submit" onclick="validarDiaSemana()">Consultar</button>
+            </div>
+            <li>Ejercicio 8</li>
+            <div class="ejercicio8">
+                <label for="valorCalificacion">Registrar la calificación</label>
+                <input id="valorCalificacion" type="number">
+                <button type="submit" onclick="validarCalificacion()">Consultar</button>
+            </div>
+            <li>Ejercicio 9</li>
+            <div class="ejercicio9">
+                <label for="topping">Digita el topping que quieres con tu helado</label>
+                <input id="topping" type="text">
+                <button type="submit" onclick="calcularHelado()">Consultar</button>
+            </div>
+            <li>Ejercicio 10</li>
+            <div class="ejercicio10">
+                <label for="programa">Elige un programa</label>
+                <select name="programa" id="programa">
+                    <option value="1">Course</option>
+                    <option value="2">Carrera</option>
+                    <option value="3">Master</option>
+                </select>
+                <label for="beca">Elige una beca</label>
+                <select name="beca" id="beca">
+                    <option value="1">Beca Facebook</option>
+                    <option value="2">Beca Google</option>
+                    <option value="3">Beca Jesua</option>
+                    <option value="4">Sin beca</option>
+                </select>
+                <button type="submit" onclick="validarCosto()">Consultar</button>
+            </div>
         </ul>
     </main>
 </body>
 <script src="/js/condicionales.js"></script>
+
 </html>
